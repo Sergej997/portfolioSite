@@ -19,7 +19,6 @@ export class NavComponent implements OnInit {
       this.projects=false;
       this.education=false;
       this.contact=false;
-      console.log("prvi");
     }
     else{if(window.location.href.toString()==='https://sergej997.github.io/portfolioSite/resume'){
       this.about=false;
@@ -45,7 +44,6 @@ export class NavComponent implements OnInit {
         this.projects=false;
         this.education=false;
         this.contact=false;
-        console.log("drugi");
       }else{
       this.about=false;
       this.projects=true;
