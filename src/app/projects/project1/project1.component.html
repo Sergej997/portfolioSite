@@ -1,0 +1,37 @@
+<div style="margin: 0 20px 0px 30px;"*ngIf="projekat!=null">
+  <div id="myDIV"class="row" style="border-bottom: 1px solid silver; margin-bottom: 10px;">
+      <div class="col-md-11 font-title" style="padding-left:0%; color:white" >{{projekat.title}}
+      </div>
+      <div class="col-md-1 back">
+      <i style="color:silver; font-size: 20px; margin-top: 5px;" class="fa fa-arrow-left" routerLink="../"></i>
+      </div>
+    </div>
+    <div class="font-text" style="margin-top: 15px; line-height: normal;">
+      <div *ngIf="projekat.languages.length>0" style="color: white; margin-bottom: 5px;">Languages: <span style="color:gray" *ngFor="let language of projekat.languages; let i=index;">{{' '+language}}<span *ngIf="i!=projekat.languages.length-1;">,</span></span></div>
+      <div *ngIf="projekat.freamworks.length>0" style="color: white; margin-bottom: 5px;">Freamworks: <span style="color:gray" *ngFor="let freamwork of projekat.freamworks; let i=index;">{{' '+freamwork}}<span *ngIf="i!=projekat.freamworks.length-1;">,</span></span></div>
+      <div *ngIf="projekat.database" style="color: white; margin-bottom: 5px;">Database: <span style="color:gray">{{projekat.database}}</span></div>
+      <div *ngIf="projekat.libraries.length>0" style="color: white; margin-bottom: 5px;">Library: <span style="color:gray" *ngFor="let library of projekat.libraries; let i=index;">{{' '+library}}<span *ngIf="i!=projekat.libraries.length-1;">,</span></span></div>
+      <div *ngIf="projekat.description" style="color: white; margin-bottom: 5px;">Description: <span style="color:gray">{{projekat.description}}</span></div>
+      <div *ngIf="projekat.github" style="color: white; margin-bottom: 5px;">GitHub: <a [href]="projekat.github" target="_blank" style="color:silver">{{projekat.github}}</a></div>
+
+    </div>
+    
+
+
+
+<div class="position font-title"style=" bottom: 0; 
+bottom:0px; width: 100%; color: white; position:relative;">Gallery
+<br>
+<!-- <div class="my-app-custom-plain-container-with-desc"> -->
+  <div *ngFor="let img of images; let i=index;" style="display:inline-block; flex-wrap: wrap; margin-right: 20px;">
+    <!-- <div *ngIf="i%2===0"></div> -->
+    <!-- <figure class="my-app-custom-image-with-desc" style="width:80px"> -->
+      <img class="pic-size"style="margin: 0px 0px 10px 0px;"[src]="img.modal.img"
+           (click)="openImageModalRowDescription(img)"/>
+    <!-- </figure> -->
+  </div>
+</div>
+<ks-modal-gallery style=" font-size: 20px;"[id]="0" [modalImages]="images"
+                  [plainGalleryConfig]="customPlainGalleryRowDescConfig"></ks-modal-gallery>
+</div>
+

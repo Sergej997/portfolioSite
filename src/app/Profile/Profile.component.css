@@ -1,0 +1,53 @@
+.profile-icon{
+  height: 30px;
+  width: 30px;
+  color:black;
+  padding: 2px;
+  text-align: center;
+}
+.social-media{
+  margin:20px 0px 0px 0px;
+  text-align: center;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 5px;
+}
+.about-me>p>i{
+  margin-bottom:5px;
+  margin-right: 5px;
+  width: 30px;
+}
+.about-me>p{
+  font-size: 0.7vw;
+}
+.container-fluid{
+  margin-left: -15px !important;
+}
+@media only screen and (max-width:767px) {
+ .klasa{
+   display:inline;
+ }
+ .nav{
+ }
+}
+@media only screen and (min-width:767px) {
+    .profile{
+      display: none;
+    }
+    .klasa{
+        padding-top: 50%;
+    }
+    .tekst{
+      position:absolute; bottom:20px;
+      justify-content: center;
+    }
+    .nav{
+      display:block;
+    }
+}
+.nav-link1{
+  color: white;
+}
+.nav-link2{
+  color: gray;
+}

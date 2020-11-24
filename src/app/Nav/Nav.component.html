@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand navbar-light justify-content-center" style="background-color: #1a1b1d;">
+
+  <!-- <div class="navbar-collapse" id="navbarColor03"> -->
+  <ul class="nav navbar-nav">
+    <li class="nav-item" (click)="onChange('about')">
+      <a class="nav-link font-text" [routerLink]="['/about']" routerLinkActive="active" data-toggle="tooltip" title="About"
+        data-placement="top" style="border-bottom:1px solid white;"><i class="fa fa-user"
+        [ngClass]="{'nav-link1': about, 'nav-link2':!about}"></i></a>
+    </li>
+    <li class="nav-item" (click)="onChange('resume')">
+      <a class="nav-link font-text" [routerLink]="['/resume']" routerLinkActive="active" data-toggle="tooltip" title="Projects"
+        style="border-bottom:1px solid white;"><i class="fa fa-tasks" 
+        [ngClass]="{'nav-link1': projects, 'nav-link2':!projects}" ></i></a>
+    </li>
+    <li class="nav-item" (click)="onChange('services')">
+      <a class="nav-link font-text" [routerLink]="['/services']" routerLinkActive="active" data-toggle="tooltip"
+        title="Education" style="border-bottom:1px solid white;"><i class="fa fa-book"
+        [ngClass]="{'nav-link1': education, 'nav-link2':!education}"
+          ></i></a>
+    </li>
+    <li class="nav-item" (click)="onChange('contact')">
+      <a class="nav-link font-text" [routerLink]="['/contact']" r outerLinkActive="active" data-toggle="tooltip" title="Contact"
+        style="border-bottom:1px solid white;"><i class="fa fa-phone" 
+        [ngClass]="{'nav-link1': contact, 'nav-link2':!contact}"></i></a>
+    </li>
+  </ul>
+  <!-- </div> -->
+
+</nav>
