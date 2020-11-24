@@ -8,7 +8,7 @@ export class ProjectsService{
       new Project("BeogradskiRestorani.com",['NodeJS','HTML','CSS','JavaScript'],"This is web application that gives users preview of best restaurants settled in Belgrade. Application offers authentication, as well as possibilities to add new restaurants, edit and delete existing ones and also write comments and post 1-5 star reviews on every restaurant. There is also search option, which finds all restaurants on a given name or restaurants address. Application was made using MEN stack (Mongo, Express, Node)","https://github.com/Sergej997/BeogradskiRestorani.com",
       [new Image(0,
        { // modal
-         img: '../../assets/images/beogradskiResstorani/1 .png',
+         img: 'https://github.com/Sergej997/portfolioSite/blob/main/src/assets/images/beogradskiResstorani/1%20.png?raw=true',
          description: 'Landing page'
        }), new Image(1,
          { // modal
@@ -55,7 +55,7 @@ export class ProjectsService{
                           img: '../../assets/images/beogradskiResstorani/10.png',
                           description: 'Restaurant page'
                         })
-     ],['Express',],"MongoDB",["Bootstrap"],"../../assets/images/beogradskiResstorani/slika.PNG"),
+     ],['Express',],"MongoDB",["Bootstrap"],"https://github.com/Sergej997/portfolioSite/blob/main/src/assets/images/beogradskiResstorani/1%20.png?raw=true"),
 
       new Project("Review of football tournaments in Serbia",['Java'],"It is JAVA GUI client-server application. It has been done in NetBeans IDE for java. Application provides work with database.E.g. Users can add football teams, competitions, matches,results, players and statistics of players on different matches and save them to database with MySQL used as relational database management system.","https://github.com/Sergej997/PregledFudbalskihTakmicenjaUSrbiji",[new Image(0,
        { // modal
