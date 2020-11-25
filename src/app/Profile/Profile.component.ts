@@ -16,32 +16,32 @@ export class ProfileComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-    if(window.location.href.toString()==='http://localhost:4200/about' || window.location.href.toString()==='http://localhost:4200'){
+    if(window.location.href.toString()==='https://sergej997.github.io/portfolioSite/about' || window.location.href.toString()==='https://sergej997.github.io/portfolioSite'){
       this.about=true;
       this.projects=false;
       this.education=false;
       this.contact=false;
     }
-    else{if(window.location.href.toString()==='http://localhost:4200/resume'){
+    else{if(window.location.href.toString()==='https://sergej997.github.io/portfolioSite/resume'){
       this.about=false;
       this.projects=true;
       this.education=false;
       this.contact=false;
     }else{
-    if(window.location.href.toString()==='http://localhost:4200/services'){
+    if(window.location.href.toString()==='https://sergej997.github.io/portfolioSite/services'){
       this.about=false;
       this.projects=false;
       this.education=true;
       this.contact=false;
     }
     else{
-    if(window.location.href.toString()==='http://localhost:4200/contact'){
+    if(window.location.href.toString()==='https://sergej997.github.io/portfolioSite/contact'){
       this.about=false;
       this.projects=false;
       this.education=false;
       this.contact=true;
     }else{
-      if(window.location.href.substring(0,window.location.href.toString().lastIndexOf("/"))==='http://localhost:4200'){
+      if(window.location.href.substring(0,window.location.href.toString().lastIndexOf("/"))==='https://sergej997.github.io/portfolioSite'){
         this.about=true;
         this.projects=false;
         this.education=false;
