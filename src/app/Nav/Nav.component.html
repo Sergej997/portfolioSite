@@ -9,7 +9,7 @@
     </li>
     <li class="nav-item" (click)="onChange('resume')">
       <a class="nav-link font-text" [routerLink]="['/resume']" routerLinkActive="active" data-toggle="tooltip" title="Projects"
-        style="border-bottom:1px solid white;"><i class="fa fa-tasks" 
+        style="border-bottom:1px solid white;"><i class="fa fa-tasks"
         [ngClass]="{'nav-link1': projects, 'nav-link2':!projects}" ></i></a>
     </li>
     <li class="nav-item" (click)="onChange('services')">
@@ -19,8 +19,8 @@
           ></i></a>
     </li>
     <li class="nav-item" (click)="onChange('contact')">
-      <a class="nav-link font-text" [routerLink]="['/contact']" r outerLinkActive="active" data-toggle="tooltip" title="Contact"
-        style="border-bottom:1px solid white;"><i class="fa fa-phone" 
+      <a class="nav-link font-text" [routerLink]="['/contact']" routerLinkActive="active" data-toggle="tooltip" title="Contact"
+        style="border-bottom:1px solid white;"><i class="fa fa-phone"
         [ngClass]="{'nav-link1': contact, 'nav-link2':!contact}"></i></a>
     </li>
   </ul>
