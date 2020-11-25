@@ -14,17 +14,7 @@ export class NavComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-    if(window.location.href.toString()==='https://sergej997.github.io/portfolioSite/about'){
-      this.about=true;
-      this.projects=false;
-      this.education=false;
-      this.contact=false;
-    }else if(window.location.href.toString()==='https://sergej997.github.io/portfolioSite') {
-      this.about=true;
-      this.projects=false;
-      this.education=false;
-      this.contact=false;
-    }else if(window.location.href.toString()==='https://sergej997.github.io/portfolioSite/') {
+    if(window.location.href.toString()==='https://sergej997.github.io/portfolioSite/about' || window.location.href.toString()==='https://sergej997.github.io/portfolioSite'){
       this.about=true;
       this.projects=false;
       this.education=false;
